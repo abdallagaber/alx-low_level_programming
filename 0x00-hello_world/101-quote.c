@@ -7,9 +7,10 @@
  */
 int main(void)
 {
-	char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	int i;
+	char s[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	for (int i; i < strlen(s); i++)
+	for (i = 0; i < (int)strlen(s); i++)
 		putchar(s[i]);
-	return (0);
+	return (1);
 }
