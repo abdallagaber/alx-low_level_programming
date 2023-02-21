@@ -9,10 +9,10 @@ int main(void)
 {
 	double a = 0, b = 1, c, i;
 
-	for (i = 0; i < 84; i++)
+	for (i = 0; i < 98; i++)
 	{
 		c = a + b;
-		(i == 83) ? printf("%.f", c) : printf("%.f, ", c);
+		(i == 97) ? printf("%.f", c) : printf("%.f, ", c);
 		a = b;
 		b = c;
 	}
