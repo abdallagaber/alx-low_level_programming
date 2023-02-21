@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	long long int a = 0, b = 1, c, i;
+	double a = 0, b = 1, c, i;
 
 	for (i = 0; i < 50; i++)
 	{
 		c = a + b;
-		printf("%lld, ", c);
+		printf("%.0lf, ", c);
 		a = b;
 		b = c;
 	}
