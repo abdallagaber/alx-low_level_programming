@@ -10,25 +10,26 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n == 0 || n == 1)
-		return (n);
 	return (_sqrt(0, n));
 }
 
 /**
  * _sqrt -> returns the square root of a number
  *
+ * @l: l is an integer argument
  * @n: n is an integer argument
- * @x: x is an integer argument
  *
  * Return: the square root of n
  */
 
-int _sqrt(int n, int x)
+int _sqrt(int l, int n)
 {
-	if (n > x / 2)
+	if (n < 0)
 		return (-1);
-	else if (n * n == x)
-		return (n);
-	return (_sqrt(n + 1, x));
+	else if (l * l > n)
+		return (-1);
+	else if (l * l == n)
+		return (l);
+	else
+		return (_sqrt(l + 1, n));
 }
